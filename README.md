@@ -9,11 +9,13 @@ This repository is a correction for the vision-camera-code-scanner to work with 
 The VisionCamera 3.X version has included barcode reading, please refer to its [`documentation`]([https://github.com/anderpaz/vision-camera-code-scanner-fix/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1](https://react-native-vision-camera.com/docs/guides/code-scanning)).
 
 This fix has been tested in the following dependency environment:
+```sh
 "react": "18.2.0",
 "react-native": "0.71.13",
 "react-native-reanimated": "3.5.4",
 "react-native-vision-camera": "2.16.5",
 "vision-camera-ocr": "^1.0.0"."
+```
 
 ## Installation
 
