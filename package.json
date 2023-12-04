@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/anderpaz/vision-camera-code-scanner-fix",
+  "repository": "https://github.com/anderpaz/vision-camera-code-scanner",
   "author": "Anderson Paz <anderluizpaz@gmail.com> (https://github.com/rodgomesc)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anderpaz/vision-camera-code-scanner-fix/issues"
+    "url": "https://github.com/anderpaz/vision-camera-code-scanner/issues"
   },
-  "homepage": "https://github.com/anderpaz/vision-camera-code-scanner-fix#readme",
+  "homepage": "https://github.com/anderpaz/vision-camera-code-scanner#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

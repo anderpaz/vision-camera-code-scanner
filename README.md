@@ -6,7 +6,7 @@ This repository is a correction for the vision-camera-code-scanner to work with 
 
 ## Important
 
-The VisionCamera 3.X version has included barcode reading, please refer to its [`documentation`]([https://github.com/anderpaz/vision-camera-code-scanner-fix/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1](https://react-native-vision-camera.com/docs/guides/code-scanning)).
+The VisionCamera 3.X version has included barcode reading, please refer to its [`documentation`]([https://github.com/anderpaz/vision-camera-code-scanner/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1](https://react-native-vision-camera.com/docs/guides/code-scanning)).
 
 This fix has been tested in the following dependency environment:
 ```sh
@@ -20,10 +20,10 @@ This fix has been tested in the following dependency environment:
 ## Installation
 
 ```sh
-yarn add anderpaz/vision-camera-code-scanner-fix
+yarn add anderpaz/vision-camera-code-scanner
 ```
 
-Import the react-native-reanimated on the first line of your [`index`](https://github.com/anderpaz/vision-camera-code-scanner-fix/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1) file.
+Import the react-native-reanimated on the first line of your [`index`](https://github.com/anderpaz/vision-camera-code-scanner/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1) file.
 
 ```sh
 import 'react-native-reanimated'
