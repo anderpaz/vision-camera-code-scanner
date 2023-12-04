@@ -8,7 +8,7 @@ VisionCamera Frame Processor Plugin to read barcodes using MLKit Vision Barcode 
 yarn add anderpaz/vision-camera-code-scanner-fix
 ```
 
-make sure you correctly [setup](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation/) react-native-reanimated and insert as a first line of your [`index.tsx`](https://github.com/anderpaz/vision-camera-code-scanner-fix/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1)
+Import the react-native-reanimated on the first line of your [`index`](https://github.com/anderpaz/vision-camera-code-scanner-fix/blob/1409a8afd02328a26e336036493b2d6ef8441359/example/index.tsx#L1) file.
 
 ```sh
 import 'react-native-reanimated'
@@ -24,7 +24,9 @@ Add this to your `babel.config.js`
   },
 ]
 ```
+To use it alongside [`ocr`](https://github.com/aarongrider/vision-camera-ocr), configure your babel.config.js like this.
 
+```
 ## Usage
 
 Simply call the `useScanBarcodes()` hook or call `scanBarcodes()` inside of the `useFrameProcessor()` hook. In both cases you will need to pass an array of `BarcodeFormat` to specify the kind of barcode you want to detect.
@@ -92,10 +94,6 @@ const styles = StyleSheet.create({
   },
 });
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
