@@ -15,7 +15,6 @@ import 'react-native-reanimated'
 ```
 
 Add this to your `babel.config.js`
-
 ```
 [
   'react-native-reanimated/plugin',
@@ -23,8 +22,16 @@ Add this to your `babel.config.js`
     globals: ['__scanCodes'],
   },
 ]
+
 ```
 To use it alongside [`ocr`](https://github.com/aarongrider/vision-camera-ocr), configure your babel.config.js like this.
+```
+[
+  'react-native-reanimated/plugin',
+  {
+    globals: ['__scanOCR', '__scanCodes'],
+  },
+]
 
 ```
 ## Usage
@@ -55,7 +62,12 @@ export default function App() {
   // const frameProcessor = useFrameProcessor((frame) => {
   //   'worklet';
   //   const detectedBarcodes = scanBarcodes(frame, [BarcodeFormat.QR_CODE], { checkInverted: true });
-  //   runOnJS(setBarcodes)(detectedBarcodes);
+  //   runOnJS(onBarcodes)(detectedBarcodes);
+
+  // Ocr reading
+  // const ocr = scanOCR(frame) as unknown as typ.oCRFrame;
+  // runOnJS(onOcr)(ocr);
+  //
   // }, []);
 
   React.useEffect(() => {
