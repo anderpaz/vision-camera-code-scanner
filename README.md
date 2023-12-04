@@ -48,7 +48,7 @@ import { useCameraDevices } from 'react-native-vision-camera';
 import { Camera } from 'react-native-vision-camera';
 import { useScanBarcodes, BarcodeFormat } from 'vision-camera-code-scanner';
 
-export default function App() {
+export cosnt App = () => {
   const [hasPermission, setHasPermission] = React.useState(false);
   const devices = useCameraDevices();
   const device = devices.back;
@@ -58,16 +58,16 @@ export default function App() {
   });
 
   // Alternatively you can use the underlying function:
-  //
   // const frameProcessor = useFrameProcessor((frame) => {
   //   'worklet';
-  //   const detectedBarcodes = scanBarcodes(frame, [BarcodeFormat.QR_CODE], { checkInverted: true });
-  //   runOnJS(onBarcodes)(detectedBarcodes);
+  //   const codes = scanBarcodes(frame, [BarcodeFormat.QR_CODE], { checkInverted: true });
+  //   console.log(codes)
+  //   // runOnJS(onBarcodes)(codes);
 
-  // Ocr reading
-  // const ocr = scanOCR(frame) as unknown as typ.oCRFrame;
-  // runOnJS(onOcr)(ocr);
-  //
+  //   //   Ocr reading
+  //   const ocr = scanOCR(frame) as unknown as typ.oCRFrame;
+  //   console.log(ocr)
+  //   //  runOnJS(onOcr)(ocr);
   // }, []);
 
   React.useEffect(() => {
